@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio – Ylias Lhuillier</title>
+  <link rel="stylesheet" href="style/style.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Ylias Lhuillier</h1>
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+        <a href="#projects">Projets</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="about-photo-container">
+      <img src="assets/img/photo de profil.jpg" alt="Photo de Ylias Lhuillier" class="about-photo">
+    </div>
+    
+    <section class="hero">
+      <h2>Futur developpeur full stack</h2>
+      <p>Entre code et compétition, je crée des interfaces web comme je joue à Valorant : avec précision, réactivité, et envie de progresser à chaque instant.</p>
+      <a href="#projects" class="btn">Voir mes projets</a>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>À propos de moi</h2>
+      <p>Je m'appelle Ylias, j’ai 20 ans et je suis étudiant en BUT Métiers du Multimédia et de l’Internet à Mulhouse. Je me spécialise dans le développement web, avec une vraie affinité pour le front-end.</p>
+      <p>J’aime concevoir des interfaces propres, dynamiques, et responsive. Je m’intéresse beaucoup à l’UX/UI, au design web et à l'accessibilité. C’est un domaine qui me passionne car il combine logique, créativité et rigueur.</p>
+      <p>En parallèle de mes études, je suis très investi dans l’univers du jeu vidéo compétitif (notamment Valorant), ce qui m’a appris la persévérance, la gestion du stress et le travail en équipe. J’aime aussi explorer l’univers musical français, ce qui m’inspire parfois dans mes choix esthétiques ou créatifs.</p>
+
+      <section id="contact" class="contact-section">
+  <h2 class="section-title">📬 Me Contacter</h2>
+  <div class="contact-container">
+    <div class="contact-card">
+      <h3>Email</h3>
+      <a href="mailto:lhuillierylias2@gmail.com">lhuillierylias2@gmail.com</a>
+    </div>
+    <div class="contact-card">
+      <h3>LinkedIn</h3>
+      <a href="https://www.linkedin.com/in/ylias-lhuillier/" target="_blank">Voir mon profil</a>
+    </div>
+    <div class="contact-card">
+      <h3>Mon CV</h3>
+      <a href="assets/pdfs/Ylias Lhuillier.pdf" class="cv-button" download>Télécharger</a>
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="skills-section fade-in">
+  <h2>Compétences</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>🎨 Design</h3>
+      <div class="skill-bar">
+        <span>Photoshop</span>
+        <div class="progress"><div class="fill" data-width="70%" style="width: 70%;"></div></div>
+        <span>Illustrator</span>
+        <div class="progress"><div class="fill" data-width="60%" style="width: 60%;"></div></div>
+        <span>Figma</span>
+        <div class="progress"><div class="fill" data-width="65%" style="width: 65%;"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>💻 Développement Web</h3>
+      <div class="skill-bar">
+        <span>HTML/CSS</span>
+        <div class="progress"><div class="fill" data-width="80%" style="width: 80%;"></div></div>
+        <span>JavaScript</span>
+        <div class="progress"><div class="fill" data-width="68%" style="width: 68%;"></div></div>
+        <span>PHP</span>
+        <div class="progress"><div class="fill" data-width="55%" style="width: 55%;"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>🎬 Audiovisuel</h3>
+      <div class="skill-bar">
+        <span>Montage vidéo</span>
+        <div class="progress"><div class="fill" data-width="75%" style="width: 75%;"></div></div>
+        <span>After Effects</span>
+        <div class="progress"><div class="fill" data-width="55%" style="width: 55%;"></div></div>
+        <span>DaVinci Resolve</span>
+        <div class="progress"><div class="fill" data-width="60%" style="width: 60%;"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>📢 Communication</h3>
+      <div class="skill-bar">
+        <span>Stratégie digitale</span>
+        <div class="progress"><div class="fill" data-width="75%" style="width: 75%;"></div></div>
+        <span>Réseaux sociaux</span>
+        <div class="progress"><div class="fill" data-width="60%" style="width: 60%;"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="projects" class="projects-section">
+      <h2>Réalisations & Compétences</h2>
+      <div class="select-container">
+        <label for="projectSelect">Choisis un projet :</label>
+        <select id="projectSelect">
+          <option value="">-- Choisis un projet --</option>
+          <option value="sitevitrine">Mes projets en developpement web</option>
+          <option value="audiovisuel">Mes créations vidéos</option>
+          <option value="infographie">Mes créations visuelles</option>
+</select>
+
+      </div>
+      <div id="output" class="output-section"></div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

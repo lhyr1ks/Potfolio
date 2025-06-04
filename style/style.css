@@ -1,0 +1,375 @@
+/* ====== GLOBAL ====== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+a {
+  color: #00b894;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #55efc4;
+}
+
+/* ====== HEADER ====== */
+header {
+  background-color: #1e1e1e;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #00b894;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+/* ====== MAIN SECTIONS ====== */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #1a1a1a;
+  border-radius: 1rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #00b894;
+  color: #121212;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #55efc4;
+}
+
+/* ====== À PROPOS / CONTACT ====== */
+.about-section h2,
+.contact-info h3 {
+  color: #00b894;
+  margin-bottom: 1rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 0.5rem;
+}
+
+/* ====== SELECTEUR ====== */
+.select-container {
+  margin-bottom: 2rem;
+}
+
+.select-container label {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+select:hover {
+  border-color: #00b894;
+  box-shadow: 0 0 5px rgba(0, 184, 148, 0.5);
+}
+
+/* ====== OUTPUT SECTION ====== */
+.output-section {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.project-details h2 {
+  color: #00b894;
+  margin-bottom: 1rem;
+}
+
+.project-details p {
+  margin-bottom: 1.5rem;
+}
+
+.video-link {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.video-link img {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.video-link img:hover {
+  transform: scale(1.03);
+}
+
+.video-link p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+.embed-container {
+  margin-top: 1rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.embed-container iframe {
+  border: none;
+  width: 100%;
+  height: 480px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 184, 148, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* ====== COMPÉTENCES ====== */
+.skills-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 184, 148, 0.3);
+}
+
+.skill-card h3 {
+  color: #00b894;
+  margin-bottom: 1rem;
+}
+
+.skill-bar span {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  color: #ccc;
+  text-align: left;
+}
+
+.progress {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+  margin: 0.3rem 0;
+}
+
+.fill {
+  background-color: #00b894;
+  height: 100%;
+  width: 0;
+  transition: width 1.5s ease-out;
+}
+
+/* ====== ANIMATIONS ====== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInSkills 1s ease-in-out forwards;
+}
+
+@keyframes fadeInSkills {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== RESPONSIVE ====== */
+@media screen and (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .embed-container iframe {
+    height: 350px;
+  }
+}
+
+/* ====== LOADER ====== */
+.loader {
+  padding: 2rem;
+  text-align: center;
+  color: #00b894;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.contact-section {
+  background-color: #1a1a1a;
+  padding: 4rem 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.contact-section .section-title {
+  color: #00b894;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-card {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 184, 148, 0.2);
+  transition: transform 0.3s ease;
+  width: 260px;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 184, 148, 0.3);
+}
+
+.contact-card h3 {
+  color: #00b894;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.contact-card a {
+  color: #f0f0f0;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  color: #55efc4;
+  text-decoration: underline;
+}
+
+.cv-button {
+  display: inline-block;
+  background-color: #00b894;
+  color: #121212;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #55efc4;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about-photo-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.about-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00b894;
+  box-shadow: 0 0 15px rgba(0, 184, 148, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.about-photo:hover {
+  transform: scale(1.05);
+}
+
